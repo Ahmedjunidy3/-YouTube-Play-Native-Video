@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            style="@style/BigTextViewCardViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:id="@+id/channel_cv_item_recyc_view_frag_channel_youtube">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp">
+
+                <TextView
+                    android:id="@+id/channel_name_tv_item_recyc_view_frag_channel_youtube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:singleLine="true"
+                    android:text="channelname"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/subscribe_numbers_tv_item_recyc_view_frag_channel_youtube"
+                    style="@style/TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/channel_name_tv_item_recyc_view_frag_channel_youtube"
+                    android:text="subscribe Numbers" />
+
+                <TextView
+                    android:id="@+id/about_tv_item_recyc_view_frag_channel_youtube"
+                    style="@style/TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subscribe_numbers_tv_item_recyc_view_frag_channel_youtube"
+                    android:layout_marginTop="1dp"
+                    android:text="about" />
+
+                <ToggleButton
+                    android:id="@+id/subscribe_btn_item_recyc_view_frag_channel_list"
+                    style="@style/SubscribeButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/about_tv_item_recyc_view_frag_channel_youtube"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginStart="4dp"
+                    android:text="Subscribe" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/state_iv_item_recyc_view_frag_channel_youtube"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="iv"
+                android:src="@mipmap/ic_launcher" />
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</FrameLayout>
